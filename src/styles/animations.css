@@ -1,0 +1,45 @@
+@keyframes softPulse {
+  0%,
+  100% {
+    opacity: 0.68;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes glowBreath {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 18px rgba(251, 191, 36, 0.55));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 42px rgba(251, 191, 36, 0.95));
+  }
+}
+
+@keyframes slowRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-soft-pulse {
+  animation: softPulse 4s ease-in-out infinite;
+}
+
+.animate-glow-breath {
+  animation: glowBreath 3.5s ease-in-out infinite;
+}
+
+.animate-slow-rotate {
+  animation: slowRotate 24s linear infinite;
+}
